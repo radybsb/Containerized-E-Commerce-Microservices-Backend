@@ -2923,11 +2923,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\lab_5\\DistributedDataAccessLab\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
       "projectName": "CustomerService.Api",
-      "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\lab_5\\DistributedDataAccessLab\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
+      "projectPath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
       "packagesPath": "C:\\Users\\radyb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\lab_5\\DistributedDataAccessLab\\CustomerService\\CustomerService.Api\\obj\\",
+      "outputPath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radyb\\AppData\\Roaming\\NuGet\\NuGet.Config"

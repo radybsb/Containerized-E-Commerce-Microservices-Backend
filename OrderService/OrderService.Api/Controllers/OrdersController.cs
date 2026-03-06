@@ -15,10 +15,9 @@ public class OrdersController : ControllerBase
     private readonly IProductClient _productClient;
     private readonly IShippingClient _shippingClient;
 
-    public OrdersController(OrdersDbContext context, ICustomerClient customerClient,
-        IProductClient productClient, IShippingClient shippingClient)
-    {
-        _context = context;
+    public OrdersController(OrdersDbContext context, ICustomerClient customerClient, IProductClient productClient, IShippingClient shippingClient)
+    { // constructor injection to get the database context and the clients for other services
+        _context = context; // allows us to interact with the database
         _customerClient = customerClient;
         _productClient = productClient;
         _shippingClient = shippingClient;

@@ -7,17 +7,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<OrdersDbContext>(options =>
     options.UseSqlite("Data Source=orders.db"));
 
-builder.Services.AddHttpClient<ICustomerClient, CustomerClient>(client =>
+builder.Services.AddHttpClient<ICustomerClient, CustomerClient>(client => // allows us to call the Customer Service API via HTTP requests
 {
     client.BaseAddress = new Uri("http://customerservice:8080/");
 });
 
-builder.Services.AddHttpClient<IProductClient, ProductClient>(client =>
+builder.Services.AddHttpClient<IProductClient, ProductClient>(client => // allows us to call the Product Service API via HTTP requests
 {
     client.BaseAddress = new Uri("http://productservice:8080/");
 });
 
-builder.Services.AddHttpClient<IShippingClient, ShippingClient>(client =>
+builder.Services.AddHttpClient<IShippingClient, ShippingClient>(client => // allows us to call the Shipping Service API via HTTP requests
 {
     client.BaseAddress = new Uri("http://shippingservice:8080/");
 });

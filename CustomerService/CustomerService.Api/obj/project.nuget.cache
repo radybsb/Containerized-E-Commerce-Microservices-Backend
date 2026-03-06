@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "llzMthCKUbQ=",
+  "dgSpecHash": "pRSmNP4f4fM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\lab_5\\DistributedDataAccessLab\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
+  "projectFilePath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radyb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
