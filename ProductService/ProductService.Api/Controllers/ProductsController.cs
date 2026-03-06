@@ -1,0 +1,33 @@
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProductService.Api.Data;
+using ProductService.Api.Models;
+
+namespace ProductService.Api.Controllers;
+
+[ApiController]
+[Route("api/products")]
+public class ProductsController : ControllerBase
+{
+    private readonly ProductsDbContext _context;
+
+    public ProductsController(ProductsDbContext context)
+    {
+        _context = context;
+    }
+
+    [HttpGet("{id}")]
+    public async Task<IActionResult> GetById(int id)
+    {
+        var product = await _context.Products.FindAsync(id);
+        return product is null ? NotFound() : Ok(product);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(Product product)
+    {
+        await _context.Products.AddAsync(product);
+        await _context.SaveChangesAsync();
+        return CreatedAtAction(nameof(GetById), new { id = product.Id }, product);
+    }
+}
