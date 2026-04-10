@@ -11,3 +11,13 @@ The application consists of a containerized distributed backend system for a sim
 - OrderService: Creates and tracks orders; orchestrates validation and shipment
 
 No gitignore, given that it's an educational project.
+
+Since the last deliverable, the microservices architecture was strengthened by:
+•	Implementation of asynchronous messaging using RabbitMQ
+•	Implementation of an API Gateway for centralized access (Ocelot)
+•	use of Data Transfer Object (DTO) based design to improve data handling and to reduce coupling
+•	ProductService stock started to be decreased by the OrderService
+•	Implementation of one aggregated endpoint (order + product + customer data)
+•	Update of the docker-compose.yml
+•	Implementation of Order Deletion
+

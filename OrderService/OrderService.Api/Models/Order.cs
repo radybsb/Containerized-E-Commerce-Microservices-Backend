@@ -6,4 +6,5 @@ public class Order
     public decimal Total { get; set; }
     public int CustomerId { get; set; }
     public int ProductId { get; set; }
+    public int Quantity { get; set; }
 }

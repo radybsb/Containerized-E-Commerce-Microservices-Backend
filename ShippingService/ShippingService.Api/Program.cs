@@ -1,10 +1,13 @@
 using ShippingService.Api.Data;
+using ShippingService.Api.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ShippingDbContext>(options =>
     options.UseSqlite("Data Source=shipments.db"));
+
+builder.Services.AddHostedService<OrderEventConsumer>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

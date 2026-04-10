@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {}
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
+        "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
         "projectName": "OrderService.Api",
-        "projectPath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
+        "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
         "packagesPath": "C:\\Users\\radyb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\obj\\",
+        "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radyb\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -61,6 +61,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[10.0.3, )"
+            },
+            "RabbitMQ.Client": {
+              "target": "Package",
+              "version": "[6.8.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

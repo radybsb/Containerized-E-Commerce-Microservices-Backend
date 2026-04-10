@@ -17,10 +17,7 @@ builder.Services.AddHttpClient<IProductClient, ProductClient>(client => // allow
     client.BaseAddress = new Uri("http://productservice:8080/");
 });
 
-builder.Services.AddHttpClient<IShippingClient, ShippingClient>(client => // allows us to call the Shipping Service API via HTTP requests
-{
-    client.BaseAddress = new Uri("http://shippingservice:8080/");
-});
+builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

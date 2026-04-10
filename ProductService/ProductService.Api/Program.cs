@@ -1,10 +1,14 @@
 using ProductService.Api.Data;
+using ProductService.Api.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<ProductsDbContext>(options =>
     options.UseSqlite("Data Source=products.db"));
+
+builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
+builder.Services.AddHostedService<OrderEventConsumer>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

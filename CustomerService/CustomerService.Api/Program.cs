@@ -1,10 +1,13 @@
 using CustomerService.Api.Data;
+using CustomerService.Api.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<CustomerDbContext>(options =>
     options.UseSqlite("Data Source=customers.db"));
+
+builder.Services.AddSingleton<IRabbitMqService, RabbitMqService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

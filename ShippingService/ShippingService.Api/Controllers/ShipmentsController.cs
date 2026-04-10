@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ShippingService.Api.Data;
 using ShippingService.Api.Models;
+using ShippingService.Api.DTOs;
 
 namespace ShippingService.Api.Controllers;
 
@@ -20,7 +21,20 @@ public class ShipmentsController : ControllerBase
     public async Task<IActionResult> GetById(int id)
     {
         var shipment = await _context.Shipments.FindAsync(id);
-        return shipment is null ? NotFound() : Ok(shipment);
+
+        if (shipment is null)
+            return NotFound();
+
+        var shipmentDto = new ShipmentDto
+        {
+            Id = shipment.Id,
+            OrderId = shipment.OrderId,
+            Status = shipment.Status,
+            TrackingNumber = shipment.TrackingNumber,
+            CreatedAt = shipment.CreatedAt
+        };
+
+        return Ok(shipmentDto);
     }
 
     [HttpGet("order/{orderId}")]
@@ -28,16 +42,44 @@ public class ShipmentsController : ControllerBase
     {
         var shipment = await _context.Shipments
             .FirstOrDefaultAsync(s => s.OrderId == orderId);
-        return shipment is null ? NotFound() : Ok(shipment);
+
+        if (shipment is null)
+            return NotFound();
+
+        var shipmentDto = new ShipmentDto
+        {
+            Id = shipment.Id,
+            OrderId = shipment.OrderId,
+            Status = shipment.Status,
+            TrackingNumber = shipment.TrackingNumber,
+            CreatedAt = shipment.CreatedAt
+        };
+
+        return Ok(shipmentDto);
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(Shipment shipment)
+    public async Task<IActionResult> Create(CreateShipmentDto createShipmentDto)
     {
-        shipment.TrackingNumber = Guid.NewGuid().ToString("N")[..12].ToUpper();
-        shipment.CreatedAt = DateTime.UtcNow;
+        var shipment = new Shipment
+        {
+            OrderId = createShipmentDto.OrderId,
+            TrackingNumber = Guid.NewGuid().ToString("N")[..12].ToUpper(),
+            CreatedAt = DateTime.UtcNow
+        };
+
         await _context.Shipments.AddAsync(shipment);
         await _context.SaveChangesAsync();
-        return CreatedAtAction(nameof(GetById), new { id = shipment.Id }, shipment);
+
+        var shipmentDto = new ShipmentDto
+        {
+            Id = shipment.Id,
+            OrderId = shipment.OrderId,
+            Status = shipment.Status,
+            TrackingNumber = shipment.TrackingNumber,
+            CreatedAt = shipment.CreatedAt
+        };
+
+        return CreatedAtAction(nameof(GetById), new { id = shipment.Id }, shipmentDto);
     }
 }

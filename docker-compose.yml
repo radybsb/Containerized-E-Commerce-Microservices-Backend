@@ -1,4 +1,40 @@
 services:
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    healthcheck:
+      test: rabbitmq-diagnostics -q ping
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  apigateway:
+    container_name: apigateway
+    build:
+      context: ./ApiGateway
+      dockerfile: Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    depends_on:
+      customerservice:
+        condition: service_started
+      productservice:
+        condition: service_started
+      orderservice:
+        condition: service_started
+      shippingservice:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+
   customerservice:
     container_name: customerservice
     build:
@@ -8,8 +44,12 @@ services:
       - "5001:8080"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      RabbitMqHost: rabbitmq
     volumes:
       - ./CustomerService/CustomerService.Api/Data:/app/Data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
 
   productservice:
     container_name: productservice
@@ -20,20 +60,12 @@ services:
       - "5003:8080"
     environment:
       ASPNETCORE_ENVIRONMENT: Development
+      RabbitMqHost: rabbitmq
     volumes:
       - ./ProductService/ProductService.Api/Data:/app/Data
-
-  shippingservice:
-    container_name: shippingservice
-    build:
-      context: ./ShippingService/ShippingService.Api
-      dockerfile: Dockerfile
-    ports:
-      - "5004:8080"
-    environment:
-      ASPNETCORE_ENVIRONMENT: Development
-    volumes:
-      - ./ShippingService/ShippingService.Api/Data:/app/Data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy
 
   orderservice:
     container_name: orderservice
@@ -45,9 +77,29 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       CustomerServiceUrl: http://customerservice:8080
-    depends_on:
-      - customerservice
-      - productservice
-      - shippingservice
+      RabbitMqHost: rabbitmq
     volumes:
       - ./OrderService/OrderService.Api/Data:/app/Data
+    depends_on:
+      customerservice:
+        condition: service_started
+      productservice:
+        condition: service_started
+      rabbitmq:
+        condition: service_healthy
+
+  shippingservice:
+    container_name: shippingservice
+    build:
+      context: ./ShippingService/ShippingService.Api
+      dockerfile: Dockerfile
+    ports:
+      - "5004:8080"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      RabbitMqHost: rabbitmq
+    volumes:
+      - ./ShippingService/ShippingService.Api/Data:/app/Data
+    depends_on:
+      rabbitmq:
+        condition: service_healthy

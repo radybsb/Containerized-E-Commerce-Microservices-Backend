@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hMd46LiGxH0=",
+  "dgSpecHash": "VXq+2MLFsHw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\radyb\\OneDrive\\Área de Trabalho\\FDU\\programing for the internet\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
+  "projectFilePath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\OrderService\\OrderService.Api\\OrderService.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radyb\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.2\\microsoft.aspnetcore.openapi.10.0.2.nupkg.sha512",
@@ -28,6 +28,7 @@
     "C:\\Users\\radyb\\.nuget\\packages\\microsoft.visualstudio.solutionpersistence\\1.0.52\\microsoft.visualstudio.solutionpersistence.1.0.52.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\mono.texttemplating\\3.0.0\\mono.texttemplating.3.0.0.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\radyb\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
