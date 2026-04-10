@@ -17,7 +17,11 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapControllers();
+app.UseRouting();
+app.UseEndpoints(endpoints =>
+{
+	endpoints.MapControllers();
+});
 
 await app.UseOcelot();
 
