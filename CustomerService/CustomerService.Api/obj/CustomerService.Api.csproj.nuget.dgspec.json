@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj": {}
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj": {
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
+        "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
         "projectName": "CustomerService.Api",
-        "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
+        "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\CustomerService.Api.csproj",
         "packagesPath": "C:\\Users\\radyb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\obj\\",
+        "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\CustomerService\\CustomerService.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radyb\\AppData\\Roaming\\NuGet\\NuGet.Config"

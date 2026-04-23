@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj": {}
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj": {}
   },
   "projects": {
-    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj": {
+    "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
+        "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
         "projectName": "ApiGateway",
-        "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
+        "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
         "packagesPath": "C:\\Users\\radyb\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\obj\\",
+        "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\radyb\\AppData\\Roaming\\NuGet\\NuGet.Config"

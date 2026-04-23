@@ -103,3 +103,13 @@ services:
     depends_on:
       rabbitmq:
         condition: service_healthy
+
+  frontend:
+    container_name: frontend
+    build:
+      context: ./Frontend
+      dockerfile: Dockerfile
+    ports:
+      - "5005:80"
+    depends_on:
+      - apigateway

@@ -21,6 +21,21 @@ public class CustomersController : ControllerBase
         _rabbitMqService = rabbitMqService;
     }
 
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var customers = await _context.Customers.ToListAsync();
+        var customerDtos = customers.Select(c => new CustomerDto
+        {
+            Id = c.Id,
+            Name = c.Name,
+            Email = c.Email,
+            PhoneNumber = c.PhoneNumber
+        }).ToList();
+
+        return Ok(customerDtos);
+    }
+
     [HttpGet("{id}")]
     public async Task<ActionResult<CustomerDto>> GetById(int id)
     {
@@ -33,7 +48,8 @@ public class CustomersController : ControllerBase
         {
             Id = customer.Id,
             Name = customer.Name,
-            Email = customer.Email
+            Email = customer.Email,
+            PhoneNumber = customer.PhoneNumber
         };
 
         return Ok(customerDto);
@@ -45,7 +61,8 @@ public class CustomersController : ControllerBase
         var customer = new Customer
         {
             Name = createCustomerDto.Name,
-            Email = createCustomerDto.Email
+            Email = createCustomerDto.Email,
+            PhoneNumber = createCustomerDto.PhoneNumber
         };
 
         await _context.Customers.AddAsync(customer);
@@ -56,6 +73,7 @@ public class CustomersController : ControllerBase
             CustomerId = customer.Id,
             Name = customer.Name,
             Email = customer.Email,
+            PhoneNumber = customer.PhoneNumber,
             CreatedAt = DateTime.UtcNow
         };
 
@@ -65,7 +83,8 @@ public class CustomersController : ControllerBase
         {
             Id = customer.Id,
             Name = customer.Name,
-            Email = customer.Email
+            Email = customer.Email,
+            PhoneNumber = customer.PhoneNumber
         };
 
         return CreatedAtAction(nameof(GetById),

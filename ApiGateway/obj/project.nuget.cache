@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QqAmLiluXko=",
+  "dgSpecHash": "+VBEvlRonCM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
+  "projectFilePath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ApiGateway\\ApiGateway.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\radyb\\.nuget\\packages\\fluentvalidation\\12.1.1\\fluentvalidation.12.1.1.nupkg.sha512",
     "C:\\Users\\radyb\\.nuget\\packages\\ipaddressrange\\6.3.0\\ipaddressrange.6.3.0.nupkg.sha512",

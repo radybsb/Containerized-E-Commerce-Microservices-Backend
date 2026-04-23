@@ -2954,11 +2954,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\ShippingService.Api.csproj",
+      "projectUniqueName": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\ShippingService.Api.csproj",
       "projectName": "ShippingService.Api",
-      "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\ShippingService.Api.csproj",
+      "projectPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\ShippingService.Api.csproj",
       "packagesPath": "C:\\Users\\radyb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\PI Project\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\obj\\",
+      "outputPath": "C:\\Users\\radyb\\OneDrive - Fairleigh Dickinson University\\Programming for the Internet\\week 11 Lab Homework\\Containerized-E-Commerce-Microservices-Backend\\ShippingService\\ShippingService.Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\radyb\\AppData\\Roaming\\NuGet\\NuGet.Config"

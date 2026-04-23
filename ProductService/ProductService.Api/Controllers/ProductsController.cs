@@ -21,6 +21,25 @@ public class ProductsController : ControllerBase
         _rabbitMqService = rabbitMqService;
     }
 
+
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var product = await _context.Products.ToListAsync();
+
+        var productDtos = product.Select(product => new ProductDto
+        {
+            Id = product.Id,
+            Name = product.Name,
+            Description = product.Description,
+            Price = product.Price,
+            StockQuantity = product.StockQuantity
+        }).ToList();
+
+        return Ok(productDtos);
+    }
+
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(int id)
     {

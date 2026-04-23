@@ -5,6 +5,7 @@
       "UpstreamHttpMethod": [ "Get" ],
       "DownstreamPathTemplate": "/api/customers/{id}",
       "DownstreamScheme": "http",
+      "Priority": 0,
       "DownstreamHostAndPorts": [
         {
           "Host": "customerservice",
@@ -17,6 +18,7 @@
       "UpstreamHttpMethod": [ "Get", "Post" ],
       "DownstreamPathTemplate": "/api/customers",
       "DownstreamScheme": "http",
+      "Priority": 1,
       "DownstreamHostAndPorts": [
         {
           "Host": "customerservice",
